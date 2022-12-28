@@ -17,13 +17,15 @@ public class C13_fibonaciSayisiWhile {
     public static ArrayList<Integer> fibonacilistesiyap(int sayi ){
 
         ArrayList<Integer>fibo=new ArrayList<>();
-        fibo.add(1);
+        fibo.add(0);
         fibo.add(1);
         int toplam=0;
         while (toplam<sayi){
+            toplam=0;
             toplam+=fibo.get(fibo.size()-2)+fibo.get(fibo.size()-1);
-            if(toplam<sayi)
+           if (toplam<sayi)
                 fibo.add(toplam);
+
         }
         return fibo;
 
